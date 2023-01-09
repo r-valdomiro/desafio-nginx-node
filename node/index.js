@@ -18,7 +18,7 @@ app.listen(port, () => {
 })
 
 app.get('/', (req, res) => {	
-	var sqlInsert = `INSERT INTO PEOPLE(NAME) VALUES('` + random_name() + `')`
+	var sqlInsert = `INSERT INTO PEOPLE(NAME) VALUES ('` + random_name() + `')`
 	connection.query(sqlInsert)
 
 	var sqlSelect = `SELECT NAME FROM PEOPLE`	
