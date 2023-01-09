@@ -24,7 +24,8 @@ services:
     entrypoint: wait-for db:3306 -t 60 -- docker-entrypoint.sh node index.js
     tty: true  
     volumes:
-      - ./node:/usr/src/app  
+      - ./node:/usr/src/app
+      - /usr/src/app/node_modules  
     networks:
       - mynetwork
     ports:
