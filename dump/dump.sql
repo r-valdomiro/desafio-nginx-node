@@ -1,1 +1,1 @@
-create table if not exists people (id int not null auto_increment primary key, name varchar(255) not null)
+CREATE TABLE IF NOT EXISTS PEOPLE (ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY, NAME VARCHAR(255) NOT NULL)
